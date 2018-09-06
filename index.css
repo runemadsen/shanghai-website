@@ -71,13 +71,12 @@ header .gradient {
 }
 
 #logo {
-  color: gray;
-  font-style: italic;
+  color: #229050;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 19px;
+  font-size: 17px;
   padding: 21px 0 10px;
   display: inline-block;
+  margin-top: 32px;
 }
 
 .menu {
@@ -95,7 +94,7 @@ header .gradient {
 }
 
 .menu li a {
-  display: block;
+  display: inline-block;
   color: #373c33;
   text-decoration: none;
   padding: 8px 0;
@@ -112,7 +111,7 @@ header .gradient {
 
 .invert {
   background-color: rgb(15, 23, 5);
-  color: #c7ceca;
+  color: #c9d0cc;
 }
 
 .invert a {
@@ -121,4 +120,11 @@ header .gradient {
 
 .invert h1 {
   color: #eceff4;
+}
+
+@media (min-width: 470px) {
+  .menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
 }
