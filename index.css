@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  color: #222d23;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lora", serif;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 850px;
+  margin: 0.8em 0;
+}
+
+a {
+  text-decoration: none;
+  color: #337d00;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+header {
+  background-color: #f5f9fd;
+  text-align: center;
+  background-image: url(assets/shanghai.jpg);
+  background-size: contain;
+  background-position: center bottom;
+  min-height: 490px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header .gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-image: linear-gradient(rgba(15, 23, 5, 0), rgb(15, 23, 5) 100%);
+}
+
+#logo {
+  color: gray;
+  font-style: italic;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 19px;
+  padding: 21px 0 10px;
+  display: inline-block;
+}
+
+.menu {
+  font-family: "Lora", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 22px;
+}
+
+.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  display: block;
+  color: #373c33;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.block {
+  padding: 25px;
+  padding-bottom: 40px;
+}
+
+.block h1 {
+  text-align: center;
+}
+
+.invert {
+  background-color: rgb(15, 23, 5);
+  color: #c7ceca;
+}
+
+.invert a {
+  color: #3d9841;
+}
+
+.invert h1 {
+  color: #eceff4;
+}
