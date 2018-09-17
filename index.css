@@ -6,6 +6,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  font-size: 100%;
 }
 
 body {
@@ -22,19 +23,19 @@ h5 {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 2.2em;
 }
 
 h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
+  font-size: 1.15em;
 }
 
-p {
-  font-size: 18px;
-  line-height: 27px;
-  max-width: 850px;
-  margin: 0.8em 0;
+p,
+ul {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 
 a {
@@ -54,7 +55,7 @@ header {
   background-color: #f5f9fd;
   text-align: center;
   background-image: url(assets/shanghai.jpg);
-  background-size: contain;
+  background-size: 100%;
   background-position: center bottom;
   min-height: 490px;
   background-repeat: no-repeat;
@@ -67,13 +68,13 @@ header .gradient {
   left: 0;
   right: 0;
   height: 20px;
-  background-image: linear-gradient(rgba(15, 23, 5, 0), rgb(15, 23, 5) 100%);
+  background-image: linear-gradient(rgba(23, 35, 8, 0), rgb(23, 35, 8) 100%);
 }
 
 #logo {
   color: #229050;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1em;
   padding: 21px 0 10px;
   display: inline-block;
   margin-top: 32px;
@@ -85,7 +86,7 @@ header .gradient {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-size: 22px;
+  font-size: 1.4em;
 }
 
 .menu li {
@@ -110,7 +111,7 @@ header .gradient {
 }
 
 .invert {
-  background-color: rgb(15, 23, 5);
+  background-color: rgb(23, 35, 8);
   color: #c9d0cc;
 }
 
@@ -122,9 +123,96 @@ header .gradient {
   color: #eceff4;
 }
 
+.max {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact p {
+  font-size: 1.2em;
+}
+
+#blog ul {
+  font-size: 1.2em;
+  list-style: none;
+  padding: 0;
+}
+
+#blog time {
+  margin-right: 8px;
+}
+
+#nyushlogo {
+  max-width: 300px;
+}
+
 @media (min-width: 470px) {
   .menu li {
     display: inline-block;
     margin-right: 10px;
+  }
+}
+
+@media (min-width: 700px) {
+  header {
+    padding-top: 20px;
+    min-height: 100vh;
+  }
+
+  #logo {
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+
+  .menu {
+    display: inline-block;
+  }
+
+  .cols {
+    column-count: 2;
+  }
+
+  .cols ul {
+    margin-top: 0;
+  }
+
+  .cols h2 {
+    margin-bottom: 15px;
+  }
+
+  #blog time {
+    display: inline-block;
+    min-width: 140px;
+  }
+}
+
+@media (min-width: 950px) {
+  header {
+    font-size: 1.1em;
+  }
+
+  .block {
+    padding: 65px 0 85px 0;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    min-height: 110vh;
+  }
+
+  #logo {
+    position: absolute;
+    left: 30px;
+    top: 16px;
   }
 }
