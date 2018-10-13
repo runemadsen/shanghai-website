@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  font-family: "Karla", sans-serif;
-  color: #222d23;
+  font-family: "Roboto", sans-serif;
+  color: #232323;
 }
 
 h1,
@@ -32,7 +32,8 @@ h2 {
 
 p,
 ul {
-  font-size: 1.1em;
+  font-weight: 300;
+  font-size: 17px;
   line-height: 1.6em;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
@@ -40,7 +41,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #337d00;
+  color: #232323;
 }
 
 ul {
@@ -62,31 +63,28 @@ header {
   position: relative;
 }
 
-header .gradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 20px;
-  background-image: linear-gradient(rgba(26, 29, 23, 0), rgb(26, 29, 23) 100%);
-}
-
 #logo {
-  color: #229050;
-  text-decoration: none;
-  font-size: 1em;
-  padding: 21px 0 10px;
-  display: inline-block;
-  margin-top: 32px;
+  font-size: 20px;
+  font-weight: 400;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background-color: #161616;
+  padding: 10px 18px;
 }
 
 .menu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #161616;
   font-family: "Lora", sans-serif;
   font-weight: bold;
+  padding: 9px 20px;
   margin: 0;
-  padding: 0;
   list-style-type: none;
-  font-size: 1.4em;
+  font-size: 18px;
 }
 
 .menu li {
@@ -96,10 +94,12 @@ header .gradient {
 
 .menu li a {
   display: inline-block;
-  color: #373c33;
+  color: white;
   text-decoration: none;
-  padding: 8px 0;
 }
+
+/* Blocks
+----------------------------------------------------- */
 
 .block {
   padding: 25px;
@@ -107,26 +107,27 @@ header .gradient {
 }
 
 .block h1 {
-  text-align: center;
+  border-bottom: 2px solid #232323;
+  padding-bottom: 14px;
 }
 
 .block a {
   color: #222d23;
-  border-bottom: 1px solid #cfe5ca;
+  border-bottom: 1px solid #d7d7d7;
 }
 
 .invert {
-  background-color: rgb(26, 29, 23);
-  color: #c9d0cc;
+  background-color: rgb(22, 22, 22);
+  color: #eceff4;
+}
+
+.block.invert h1 {
+  border-color: white;
 }
 
 .invert a {
   color: #e7e7e7;
-  border-bottom: 1px solid #357c22;
-}
-
-.invert h1 {
-  color: #eceff4;
+  border-bottom: 1px solid #828282;
 }
 
 .max {
@@ -158,9 +159,14 @@ header .gradient {
 }
 
 @media (min-width: 470px) {
-  .menu li {
-    display: inline-block;
-    margin-right: 10px;
+  .block h1 {
+    padding-left: 20px;
+    margin-bottom: 35px;
+  }
+
+  .block p {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -171,12 +177,16 @@ header .gradient {
   }
 
   #logo {
-    margin-top: 0px;
-    margin-right: 20px;
+    font-size: 28px;
   }
 
   .menu {
+    font-size: 22px;
+  }
+
+  .menu li {
     display: inline-block;
+    margin-right: 10px;
   }
 
   .cols {
@@ -198,6 +208,10 @@ header .gradient {
 }
 
 @media (min-width: 950px) {
+  .block h1 {
+    font-size: 42px;
+  }
+
   header {
     font-size: 1.1em;
   }
@@ -207,18 +221,12 @@ header .gradient {
   }
 
   p {
-    font-size: 1.15em;
+    font-size: 19px;
   }
 }
 
 @media (min-width: 1200px) {
   header {
     min-height: 110vh;
-  }
-
-  #logo {
-    position: absolute;
-    left: 30px;
-    top: 16px;
   }
 }
