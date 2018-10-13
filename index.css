@@ -33,7 +33,7 @@ h2 {
 p,
 ul {
   font-size: 1.1em;
-  line-height: 1.5em;
+  line-height: 1.6em;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
 }
@@ -68,7 +68,7 @@ header .gradient {
   left: 0;
   right: 0;
   height: 20px;
-  background-image: linear-gradient(rgba(23, 35, 8, 0), rgb(23, 35, 8) 100%);
+  background-image: linear-gradient(rgba(26, 29, 23, 0), rgb(26, 29, 23) 100%);
 }
 
 #logo {
@@ -110,13 +110,19 @@ header .gradient {
   text-align: center;
 }
 
+.block a {
+  color: #222d23;
+  border-bottom: 1px solid #cfe5ca;
+}
+
 .invert {
-  background-color: rgb(23, 35, 8);
+  background-color: rgb(26, 29, 23);
   color: #c9d0cc;
 }
 
 .invert a {
-  color: #3d9841;
+  color: #e7e7e7;
+  border-bottom: 1px solid #357c22;
 }
 
 .invert h1 {
@@ -201,7 +207,7 @@ header .gradient {
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1.15em;
   }
 }
 
