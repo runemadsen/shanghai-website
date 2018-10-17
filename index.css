@@ -81,7 +81,7 @@ header {
   background-color: #161616;
   font-family: "Lora", sans-serif;
   font-weight: bold;
-  padding: 9px 20px;
+  padding: 13px 20px;
   margin: 0;
   list-style-type: none;
   font-size: 18px;
@@ -144,18 +144,17 @@ header {
   font-size: 1.2em;
 }
 
-#blog ul {
-  font-size: 1.2em;
-  list-style: none;
-  padding: 0;
-}
-
-#blog time {
-  margin-right: 8px;
-}
-
 #nyushlogo {
   max-width: 300px;
+}
+
+time {
+  font-size: 14px;
+  color: #828282;
+}
+
+.news-item {
+  margin-bottom: 30px;
 }
 
 @media (min-width: 470px) {
@@ -180,13 +179,13 @@ header {
     font-size: 28px;
   }
 
-  .menu {
-    font-size: 22px;
-  }
-
   .menu li {
     display: inline-block;
     margin-right: 10px;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
   }
 
   .cols {
@@ -199,11 +198,6 @@ header {
 
   .cols h2 {
     margin-bottom: 15px;
-  }
-
-  #blog time {
-    display: inline-block;
-    min-width: 140px;
   }
 }
 
